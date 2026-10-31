@@ -21,7 +21,7 @@ Este repositório contém o código e os dados necessários para reproduzir inte
 
 ## 2. Estrutura do Repositório
 
-`	ext
+```text
 ├── data/
 │   ├── memory-prices.csv                  # Dados brutos do Stanford DAM
 │   ├── cpiaucsl.csv                       # Índice inflacionário CPIAUCSL
@@ -31,7 +31,7 @@ Este repositório contém o código e os dados necessários para reproduzir inte
 ├── requirements.txt                       # Dependências com versões exatas
 ├── .gitignore                             # Controle de versão git
 └── README.md                              # Instruções de execução
-`
+```
 
 ---
 
@@ -39,39 +39,39 @@ Este repositório contém o código e os dados necessários para reproduzir inte
 
 ### Passo 1: Clonar o Repositório
 
-`ash
+```bash
 git clone https://github.com/vitorszvr/tcc-analise.git
 cd tcc-analise
-`
+```
 
 ### Passo 2: Criar e Ativar o Ambiente Virtual
 
 No Windows (PowerShell):
 
-`powershell
+```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-`
+```
 
 No Linux ou macOS (Bash):
 
-`ash
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
-`
+```
 
 ### Passo 3: Instalar as Dependências
 
-`ash
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-`
+```
 
 ### Passo 4: Executar o Caderno Analítico
 
-`ash
+```bash
 jupyter notebook tcc.ipynb
-`
+```
 
 Execute as células sequencialmente (Kernel -> Restart & Run All) para gerar todas as tabelas estatísticas, cálculos de volatilidade e modelos de ponto de mudança (*Hinge Regression* e *Step Change* de Bai-Perron).
 
